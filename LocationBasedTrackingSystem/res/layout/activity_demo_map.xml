@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DemoMapActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/addressbarGet_dma"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/location_ma" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/add_fpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/findbut_ma" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.81" >
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.MapFragment" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/location_dma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/location_dma" />
+    </LinearLayout>
+
+</LinearLayout>
