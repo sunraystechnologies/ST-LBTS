@@ -9,6 +9,6 @@ package com.locationbasedtrackingsystem.activity;
 
 public final class Manifest {
     public static final class permission {
-        public static final String MAPS_RECEIVE="in.co.sunrays.lbts.activity.permission.MAPS_RECEIVE";
+        public static final String MAPS_RECEIVE="in.co.sunrays.lbts.ctl.permission.MAPS_RECEIVE";
     }
 }
